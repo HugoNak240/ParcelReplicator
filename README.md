@@ -1,9 +1,14 @@
-### File Manager Application: CopyMoveQC
+### File Manager Application: ParcelReplicator
 
 ## Description:
 
-This application copys and moves files to multiple subdirectories. It is intended to save time for laboratory admins/report writers by eliminating this task.
+This application replicates a parcel of files to multiple subdirectories by using python library tool, shutil. Initial intention is to automate
+a laboratory admin task, copy and paste quality control sample of the same type into multiple client workorder subdirectories. 
 
 ## How to use:
 
-Enter list of quality control samples to copy and list of workeorder/sampletype subdir's to move those copies. On frontend, user will be able to see the list of QC's and subdirectories. Users are able to edit those lists with buttons.
+Place files for replication into 'parcel' folder. 
+Start application and enter the 2 required inputs:
+  1. Workorder number
+  2. Sample Type
+Workorder numbers need to be typed in and sample type is set of analytes to choose from.
