@@ -1,0 +1,27 @@
+
+Drop QC sample files into folder for application to copy and paste.
+
+User Interface:
+add, delete, execute, show workorder list, quit  
+
+
+    2 variables 
+    workorder is a list of workorder ints 7 digits 
+    sampletype is a dictionary, key is integer and value is choice of analyte PFAS, DIOXIN, PCB, PEST 
+    needs input from user: workorder nums + sampletype to build path 
+    pathway i.e. ~/:L/Archive/'workorder'/sampltetype[workorder]
+    
+    1 sampletype per task execution
+
+    display current WO/sampletype list status
+    add and delete items from list
+
+    needs to return usable path to copy files to 
+
+the app file is a function that uses shutil to copy sample_folder list to subdir path made together with 
+qcDest.workorders and qcDest.sampletype
+ 
+12/21/2022
+Copied and moved 3 files 
+
+
