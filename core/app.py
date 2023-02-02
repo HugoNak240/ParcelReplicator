@@ -1,6 +1,6 @@
 import shutil
 import os
-from classes import Pathfinder
+from classes.Pathfinder import Pathfinder
 
 """
 assign contents of chosen folder as list of samples 
@@ -9,7 +9,7 @@ create qcDest object, subdir_paths
 """
 
 parcel = os.listdir(
-    "/Users/hugonak/Desktop/ProgramPractice/githubrepo/COPY_MOVE_QC_gh/CopyMoveQC/CopyMove/SampleFolder")
+    "/Users/hugonak/Desktop/ProgramPractice/githubrepo/ParcelReplicator_local/ParcelReplicator/parcel")
 parcel_list = " ".join(parcel)
 subdir_paths = Pathfinder()
 
@@ -24,8 +24,8 @@ MUST HAVE
 
 
 def menu():
-    print("COPY_MOVE_QC")
-    print("Place samples to copy and move into selected SampleFolder")
+    print("ParcelReplicator")
+    print("Place samples into 'parcel' folder")
     print("Current list of samples :" + parcel_list)
     print("1. Choose Analyte")
     print("2. Enter Workorders")
@@ -37,25 +37,29 @@ def menu():
     while userChoice == 0:
         userChoice = int(input("Select Action Number: "))
         if userChoice == 1:
+            os.system('clear')
             subdir_paths.change_AC()
             userChoice = 0
             menu()
         elif userChoice == 2:
+            os.system('clear')
             subdir_paths.add_workorder()
             userChoice = 0
             menu()
         elif userChoice == 3:
+            os.system('clear')
             subdir_paths.delete_workorder()
             menu()
             userChoice = 0
         elif userChoice == 4:
+            os.system('clear')
             subdir_paths.show_list()
             userChoice = 0
             menu()
         elif userChoice == 5:
-
-            srcflder = "/Users/hugonak/Desktop/ProgramPractice/githubrepo/COPY_MOVE_QC_gh/CopyMoveQC/CopyMove/SampleFolder/"
-            woDB = "/Users/hugonak/Desktop/ProgramPractice/githubrepo/COPY_MOVE_QC_gh/CopyMoveQC/CopyMove/WorkOrderDB"
+            os.system('clear')
+            srcflder = "/Users/hugonak/Desktop/ProgramPractice/githubrepo/ParcelReplicator_local/ParcelReplicator/parcel"
+            woDB = "/Users/hugonak/Desktop/ProgramPractice/githubrepo/ParcelReplicator_local/ParcelReplicator/ExampleDB"
             execute = ""
             execute = input("Enter EXE to initiate application: ")
 

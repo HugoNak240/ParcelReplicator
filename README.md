@@ -9,6 +9,6 @@ a laboratory admin task, copy and paste quality control sample of the same type 
 
 Place files for replication into 'parcel' folder. 
 Start application and enter the 2 required inputs:
-  1. Workorder number
-  2. Sample Type
-Workorder numbers need to be typed in and sample type is set of analytes to choose from.
+  1. Workorder number (string)
+  2. Sample Type (string)
+Workorder numbers need to be typed in and sample type is from a set of options to choose from. Application will 
