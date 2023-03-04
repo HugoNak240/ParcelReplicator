@@ -15,6 +15,9 @@ subdir_paths = Pathfinder()
 
 
 """
+Format for menu text
+    print('{:s}'.format('\u0332').join(''))
+
 menu for application
 MUST HAVE
     5 avaiable options
@@ -24,14 +27,15 @@ MUST HAVE
 
 
 def menu():
-    print("ParcelReplicator")
-    print("Place samples into 'parcel' folder")
-    print("Current list of samples :" + parcel_list)
+    print('{:s}'.format('\u0332').join('ParcelReplicator'))
+    print('{:s}'.format('\u0332').join('Place samples into "parcel" folder'))
+    print('{:s}'.format('\u0332').join(
+        'Current list of samples :') + parcel_list)
     print("1. Choose Analyte")
     print("2. Enter Workorders")
     print("3. Delete Workorder")
     print("4. Show Workorder list")
-    print("5. Execute CopyMove")
+    print("5. Execute")
     print("6. Quit")
     userChoice = 0
     while userChoice == 0:
