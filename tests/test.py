@@ -1,6 +1,5 @@
 import unittest
-# from app import subdir_paths
-# from app import parcel
+from ..core.app import subdir_paths
 
 """
 test --> all workorder/sampletype subdir's have sample files
@@ -14,6 +13,13 @@ List of bugs:
 
 
 class TestParcelReplicator(unittest.TestCase):
+
+    def test_workorder_constraints(self):
+        """
+        input length is 
+        """
+        return
+
     def test_final(self):
         """
         Test that parcel of data was replicated to correct subdirectories

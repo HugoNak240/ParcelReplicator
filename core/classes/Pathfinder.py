@@ -1,12 +1,6 @@
 
 ANALYTE_CHOICES = {1: 'PFAS', 2: 'DIOXIN', 3: 'PCB', 4: 'PEST'}
 
-"""
-for qcDest
-all we need is a list of of workorders and analysis to build file path
-only cycle through list of workorders 
-"""
-
 
 class Pathfinder():
     def __init__(self):
