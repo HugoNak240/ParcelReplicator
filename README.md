@@ -6,7 +6,7 @@ This application replicates a parcel of files to multiple subdirectories by usin
 
 ## How to use:
 
-Place files for replication into 'parcel' folder. Application is able to present list of files. 
+Clone repository and place files for replication into 'parcel' folder. Application is able to present list of files. 
 Start application and enter the required inputs:
   1. Workorder number (string)
   2. Sample Type (string)
